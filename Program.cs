@@ -40,6 +40,7 @@ while(playAgain)
      if(chooseNum == true)
     {
         Console.WriteLine(" WHAT KIND OF COSTUME IS THAT?\nSTOP MESSING WITH ME, WHAT ARE YOU SUPPOSED TO BE?");
+        myCostume = Console.ReadLine().ToUpper();
     }
     else
     {
