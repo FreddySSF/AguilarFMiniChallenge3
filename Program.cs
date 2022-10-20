@@ -17,15 +17,13 @@ while(playAgain)
     Console.WriteLine(" WELCOME TO THE HALLOWEEN PARTY! wHAT IS YOUR NAME? TYPE END TO LEAVE THE PARTY AND GO HOME.. ");
     string myName = Console.ReadLine().ToUpper();
     chooseNum = Int32.TryParse(myName, out noNum);
-    if(chooseNum == true)
+    while(chooseNum == true)
     {
         Console.WriteLine(" UMM.. THAT NAME IS NOT ON THE GUEST LIST. WHAT'S YOUR REAL NAME? ");
         myName = Console.ReadLine().ToUpper();
+        chooseNum = Int32.TryParse(myName, out noNum);
     }
-    else
-    {
-        Console.WriteLine(" THAT'S A COOL NAME!\n ");
-    }
+    
 
     if(myName == "END".ToUpper())
     {
@@ -37,12 +35,14 @@ while(playAgain)
     Console.WriteLine(" NICE TO MEET YOU " + myName + ", WHAT DID YOU DRESS UP AS FOR HALLOWEEN? ");
     string myCostume = Console.ReadLine().ToUpper();
     chooseNum = Int32.TryParse(myCostume, out noNum);
-     if(chooseNum == true)
+     while(chooseNum == true)
     {
         Console.WriteLine(" WHAT KIND OF COSTUME IS THAT?\nSTOP MESSING WITH ME, WHAT ARE YOU SUPPOSED TO BE?");
         myCostume = Console.ReadLine().ToUpper();
+        chooseNum = Int32.TryParse(myCostume, out noNum);
+        
     }
-    else
+    
     {
         Console.WriteLine(" SWEET COSTUME!\n ");
     }
