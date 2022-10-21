@@ -4,6 +4,7 @@
 // We will recreate mini challenge 3 where we ask two questions.
 // We will take the answers from the two questions and display the answer in one sentence.
 // Adding in data validation to ensure user inputs an appropriate response.
+// Peer Reviewed By: Isaiah Ferguson
 
 Console.Clear();
 
